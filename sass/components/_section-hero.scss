@@ -1,0 +1,30 @@
+.hero {
+  background-color: $background-color-dark;
+  background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+    url(../images/hero.jpg);
+  background-size: 1600px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  &__container {
+    padding-left: 252px;
+    padding-right: 252px;
+  }
+  &__title {
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+
+    color: $color-text-hero;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+}

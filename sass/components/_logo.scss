@@ -1,0 +1,18 @@
+.logo {
+  font-family: $secondary-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(30 / 26);
+  text-decoration: none;
+
+  &__accent {
+    color: $color-text-accent;
+  }
+  &--header {
+    margin-right: 93px;
+    color: $color-text-dark;
+  }
+  &--footer {
+    color: $color-text-hero;
+  }
+}

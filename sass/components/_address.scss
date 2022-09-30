@@ -1,0 +1,27 @@
+.address {
+  margin-top: 20px;
+
+  &__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.address__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  font-style: normal;
+  line-height: calc(24 / 14);
+  color: $color-text-hero;
+
+  &--contact {
+    color: $color-text-adress;
+  }
+  &:hover,
+  &:focus {
+    color: $color-text-accent;
+  }
+}
