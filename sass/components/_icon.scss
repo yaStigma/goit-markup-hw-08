@@ -1,15 +1,23 @@
-.icon--envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
+//mobile style
 .icon--smartphone {
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
 }
+.icon--envelope {
+  display: none;
+}
+
+// .icon--envelope {
+//   width: 16px;
+//   height: 12px;
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
+// .icon--smartphone {
+//   width: 10px;
+//   height: 16px;
+//   margin-right: 10px;
+//   fill: currentColor;
+// }
 .icon--send {
   width: 24px;
   height: 24px;
@@ -41,5 +49,10 @@
 
   width: 16px;
   height: 15px;
+  letter-spacing: 0;
+}
+.icon--menu {
+  width: 40px;
+  height: 40px;
   letter-spacing: 0;
 }
