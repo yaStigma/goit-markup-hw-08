@@ -665,7 +665,7 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 .team__container {
-  padding: 30px;
+  padding: 30px 122px 24px 122px;
 }
 .team__member {
   margin-bottom: 10px;
@@ -708,6 +708,19 @@ img {
 .team__link:hover, .team__link:focus {
   fill: #ffffff;
   background-color: #2196f3;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+.grid__item--client {
+  width: 210px;
+  height: 92px;
 }
 
 .client__link {
