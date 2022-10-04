@@ -1,3 +1,4 @@
+// base mobile style
 body {
   background: $background-color-main;
   color: $color-text-main;
@@ -17,14 +18,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-// .container {
-//   width: 1200px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -38,40 +31,67 @@ img {
     text-align: center;
   }
 }
+// tablet stule
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 
-//   &__heading {
-//     margin-bottom: 50px;
-//     color: $color-text-topic;
-//     font-weight: 700;
-//     font-size: 36px;
-//     line-height: calc(42 / 36);
-//     text-align: center;
-//   }
-// }
+    &__item--advantage {
+      width: 354px;
+    }
+    &__item--work {
+      width: 354px;
+    }
+    &__item--team {
+      width: 354px;
+    }
+    &__item--client {
+      width: 266px;
+      height: 92px;
+    }
+    &__item--project {
+      width: 354px;
+    }
+  }
+}
+// decstop style
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 
-// .grid {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 30px;
-
-//   &__item--advantage {
-//     width: 270px;
-//   }
-//   &__item--work {
-//     width: 370px;
-//   }
-//   &__item--team {
-//     width: 270px;
-//   }
-//   &__item--client {
-//     width: 170px;
-//     height: 92px;
-//   }
-//   &__item--project {
-//     width: 370px;
-//   }
-// }
+    &__heading {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: calc(42 / 36);
+      text-align: center;
+    }
+  }
+  .grid {
+    &__item--advantage {
+      width: 270px;
+    }
+    &__item--work {
+      width: 370px;
+    }
+    &__item--team {
+      width: 270px;
+    }
+    &__item--client {
+      width: 170px;
+      height: 92px;
+    }
+    &__item--project {
+      width: 370px;
+    }
+  }
+}
