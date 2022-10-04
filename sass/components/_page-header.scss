@@ -5,22 +5,15 @@
     padding: 16px 10px 16px 15px;
   }
 }
-// tablet style
+// tablet / desktop style
 @media screen and (min-width: 768px) {
-.header {
-  &__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  }
-// desktop stule
-// .header {
-//   border-bottom: 1px solid $background-color-line;
+  .header {
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-//   &__container {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-// }
+      padding: 0;
+    }
+  }
+}

@@ -1,9 +1,15 @@
 //mobile style
-.icon--smartphone {
-  display: none;
-}
 .icon--envelope {
-  display: none;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.icon--smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 .icon--send {
   width: 24px;
@@ -42,19 +48,4 @@
   width: 40px;
   height: 40px;
   letter-spacing: 0;
-}
-// tablet stule
-@media screen and (min-width: 768px) {
-  .icon--envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
-  .icon--smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: currentColor;
-  }
 }
