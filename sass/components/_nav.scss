@@ -1,6 +1,10 @@
-// // Mobile style
-// .nav {
-//   &__list {
+// Mobile style
+.nav {
+  &__list {
+    display: none;
+  }
+}
+
 //     &--contact {
 //       margin-top: auto;
 //     }
@@ -47,8 +51,8 @@
 // }
 
 // tablet style
-@media screen and (min-width: 768px) {
-}
+// @media screen and (min-width: 768px) {
+// }
 
 // decstop style
 @media screen and (min-width: 1200px) {

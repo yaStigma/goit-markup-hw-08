@@ -1,7 +1,8 @@
+//  mobile style
 .logo {
   font-family: $secondary-font;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: calc(28 / 24);
   text-decoration: none;
 
@@ -15,21 +16,15 @@
     color: $color-text-hero;
   }
 }
-// .logo {
-//   font-family: $secondary-font;
-//   font-size: 26px;
-//   font-weight: 700;
-//   line-height: calc(30 / 26);
-//   text-decoration: none;
+// desktop style
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: calc(30 / 26);
 
-//   &__accent {
-//     color: $color-text-accent;
-//   }
-//   &--header {
-//     margin-right: 93px;
-//     color: $color-text-dark;
-//   }
-//   &--footer {
-//     color: $color-text-hero;
-//   }
-// }
+    &--header {
+      margin-right: 93px;
+      color: $color-text-dark;
+    }
+  }
+}
