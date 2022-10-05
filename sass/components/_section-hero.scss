@@ -1,10 +1,11 @@
 .hero {
   background-color: $background-color-dark;
-  // background-image: linear-gradient($background-color-gradient, $background-color-gradient),
-  // url(../images/hero.jpg);
-  background-size: 480px;
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+    url(../images/hero/bg-img_sm.jpg);
 
   padding-top: 118px;
   padding-bottom: 118px;
@@ -28,33 +29,58 @@
     text-transform: uppercase;
   }
 }
-// .hero {
-//   background-color: $background-color-dark;
-//   background-image: linear-gradient($background-color-gradient, $background-color-gradient),
-//     url(../images/hero.jpg);
-//   background-size: 1600px;
-//   background-position: center;
-//   background-repeat: no-repeat;
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+      url(../images/hero/bg-img_sm@2x.jpg);
+  }
+}
+// tablet stule
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+      url(../images/hero/bg-img_md.jpg);
 
-//   padding-top: 200px;
-//   padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-//   &__container {
-//     padding-left: 252px;
-//     padding-right: 252px;
-//   }
-//   &__title {
-//     width: 696px;
-//     margin-bottom: 30px;
-//     margin-left: 0;
-//     margin-right: 0;
+    &__container {
+      padding-left: 204px;
+      padding-right: 204px;
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+      url(../images/hero/bg-img_md@2x.jpg);
+  }
+}
+// desktop style
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+      url(../images/hero/bg-img_lg.jpg);
+    background-size: 1600px;
 
-//     color: $color-text-hero;
-//     font-weight: 900;
-//     font-size: 44px;
-//     line-height: calc(60 / 44);
-//     text-align: center;
-//     letter-spacing: 0.06em;
-//     text-transform: uppercase;
-//   }
-// }
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__container {
+      padding-left: 252px;
+      padding-right: 252px;
+    }
+    &__title {
+      width: 696px;
+
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
+  }
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($background-color-gradient, $background-color-gradient),
+      url(../images/hero/bg-img_lg@2x.jpg);
+  }
+}
