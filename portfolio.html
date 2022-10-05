@@ -23,93 +23,45 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a class="logo logo--header" href="./index.html"
-          ><span class="logo__accent">Web</span>Studio</a
-        >
-
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <nav class="nav">
-            <button class="button--close-menu menu-toggle js-close-menu" type="button">
-              <svg class="icon--close">
-                <use href="./images/icons.svg#icon-close"></use>
+        <nav class="nav">
+          <a class="logo logo--header" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="list nav__list nav__list--contact">
+          <li class="nav__item nav__item--contact">
+            <a class="nav__link nav__link--contact" href="mailto:info@devstudio.com">
+              <svg class="icon--envelope">
+                <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
-            </button>
-            <ul class="list nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./index.html">Студія</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
-              </li>
-              <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
-            </ul>
-          </nav>
-          <ul class="list nav__list nav__list--contact">
-            <li class="nav__item">
-              <a class="nav__link nav__link--contact" href="mailto:info@devstudio.com">
-                <svg class="icon--envelope">
-                  <use href="./images/icons.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="nav__item">
-              <a
-                class="nav__link nav__link--contact nav__link--contact-tel"
-                href="tel:+380961111111"
-              >
-                <svg class="icon--smartphone">
-                  <use href="./images/icons.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="list menu--social">
-            <li class="menu__item--social">
-              <a
-                href="https://www.instagram.com"
-                class="menu__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </li>
-            <li class="menu__item--social">
-              <a
-                href="https://twitter.com"
-                class="menu__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </li>
-            <li class="menu__item--social">
-              <a
-                href="https://www.facebook.com"
-                class="menu__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-            </li>
-            <li class="menu__item--social">
-              <a
-                href="https://ua.linkedin.com"
-                class="menu__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Linkedin
-              </a>
-            </li>
-          </ul>
-        </div>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="nav__item nav__item--contact">
+            <a class="nav__link nav__link--contact" href="tel:+380961111111">
+              <svg class="icon--smartphone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
-      <button class="button--menu menu-toggle js-open-menu" type="button">
+      <button
+        class="button--menu menu-toggle js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="icon--menu">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
@@ -140,14 +92,45 @@
             <li class="grid__item--project">
               <a href="#" class="project__link" target="_blank" rel="noopener noreferrer">
                 <div class="project__container">
-                  <img
+                 
+                  <picture>
+ <!-- desktop -->
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/imglg@1x.webr 1x,
+                    ./images/portfolio/imglg@2x.webr 2x"
+                    type="image/webp"  />
+                    <source media="(min-width: 1200px)"
+                    srcset="./images/portfolio/imglg@1x.jpg 1x,
+                    ./images/portfolio/imglg@2x.jpg 2x"
+                    type="image/jpg"  />
+ <!-- tablet -->
+                    <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/imgmd@1x.webr 1x,
+                    ./images/portfolio/imgmd@2x.webr 2x"
+                    type="image/webp"  />
+                    <source media="(min-width: 768px)"
+                    srcset="./images/portfolio/immdg@1x.jpg 1x,
+                    ./images/portfolio/imgmd@2x.jpg 2x"
+                    type="image/jpg"  />
+ <!-- mobile -->
+ <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/imgsm@1x.webr 1x,
+                    ./images/portfolio/imgsm@2x.webr 2x"
+                    type="image/webp"  />
+                    <source media="(max-width: 767px)"
+                    srcset="./images/portfolio/imgsm@1x.jpg 1x,
+                    ./images/portfolio/imsmg@2x.jpg 2x"
+                    type="image/jpg"  />
+                   <img
                     class="img"
-                    src="./images/project-1.jpg"
+                    src="./images/portfolio/imgsm@1x.jpg"
                     alt="Макет Веб-сайту"
-                    width="370"
+                    width="450"
                     height="294"
-                  />
-                  <div class="overlay">
+                    loading="lazy"
+                  /> 
+                  </picture>
+                                    <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -164,13 +147,44 @@
             <li class="grid__item--project">
               <a href="#" class="project__link" target="_blank" rel="noopener noreferrer">
                 <div class="project__container">
-                  <img
-                    class="img"
-                    src="./images/project-2.jpg"
-                    alt="Макет спортивного постеру"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <!-- desktop -->
+                                       <source media="(min-width: 1200px)"
+                                       srcset="./images/portfolio/imglg@1x-1.webr 1x,
+                                       ./images/portfolio/imglg@2x-1.webr 2x"
+                                       type="image/webp"  >
+                                       <source media="(min-width: 1200px)"
+                                       srcset="./images/portfolio/imglg@1x-1.jpg 1x,
+                                       ./images/portfolio/imglg@2x-1.jpg 2x"
+                                       type="image/jpg"  >
+                    <!-- tablet -->
+                                       <source media="(min-width: 768px)"
+                                       srcset="./images/portfolio/imgmd@1x-1.webr 1x,
+                                       ./images/portfolio/imgmd@2x-1.webr 2x"
+                                       type="image/webp"  >
+                                       <source media="(min-width: 768px)"
+                                       srcset="./images/portfolio/immdg@1x-1.jpg 1x,
+                                       ./images/portfolio/imgmd@2x-1.jpg 2x"
+                                       type="image/jpg"  >
+                    <!-- mobile -->
+                    <source media="(max-width: 767px)"
+                                       srcset="./images/portfolio/imgsm@1x-1.webr 1x,
+                                       ./images/portfolio/imgsm@2x-1.webr 2x"
+                                       type="image/webp"  >
+                                       <source media="(max-width: 767px)"
+                                       srcset="./images/portfolio/imgsm@1x-1.jpg 1x,
+                                       ./images/portfolio/imsmg@2x-1.jpg 2x"
+                                       type="image/jpg"  >
+                                      <img
+                                       class="img"
+                                       src="./images/portfolio/imgsm@1x-1.jpg"
+                                       alt="Макет спортивного постеру"
+                                       width="450"
+                                       height="294"
+                                       loading="lazy"
+                                     > 
+                                     </picture>
+                  
                   <div class="overlay">
                     <p class="overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -361,87 +375,89 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__container--address">
-          <a class="logo logo--footer" href="./index.html"
-            ><span class="logo__accent">Web</span>Studio</a
-          >
-          <address class="address" id="contact">
-            <ul class="list address__list">
-              <li class="address__item">
+        <div class="footer__container--box">
+          <div class="footer__container--address">
+            <a class="logo logo--footer" href="./index.html"
+              ><span class="logo__accent">Web</span>Studio</a
+            >
+            <address class="address" id="contact">
+              <ul class="list address__list">
+                <li class="address__item">
+                  <a
+                    class="address__link"
+                    href="https://goo.gl/maps/qeLY9MRspjxgZA8L9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link address__link--contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link address__link--contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer__container--social">
+            <p class="footer__container--title">приєднуйтесь</p>
+            <ul class="list social">
+              <li class="social__item">
                 <a
-                  class="address__link"
-                  href="https://goo.gl/maps/qeLY9MRspjxgZA8L9"
+                  href="https://www.instagram.com"
+                  class="social__link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
+                  <svg class="icon--social">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item-address">
-                <a class="address__link address__link--contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+              <li class="social__item">
+                <a
+                  href="https://twitter.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="icon--social">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item-address">
-                <a class="address__link address__link--contact" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
+              <li class="social__item">
+                <a
+                  href="https://www.facebook.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
+                  <svg class="icon--social">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://ua.linkedin.com"
+                  class="social__link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon--social">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-
-        <div class="footer__container--social">
-          <p class="footer__container--title">приєднуйтесь</p>
-          <ul class="list social">
-            <li class="social__item">
-              <a
-                href="https://www.instagram.com"
-                class="social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://twitter.com"
-                class="social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://www.facebook.com"
-                class="social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://ua.linkedin.com"
-                class="social__link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg class="icon--social">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__container--form">
           <p class="footer__container--title">Підпишіться на розсилку</p>
@@ -466,6 +482,83 @@
         </div>
       </div>
     </footer>
-    <script src="./js/mobile-menu.js"></script>
+    <!-- mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="button--close-menu menu-toggle js-close-menu" type="button">
+        <svg class="icon--close">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="list menu__list">
+        <li class="menu__item">
+          <a class="menu__link" href="./index.html">Студія</a>
+        </li>
+        <li class="menu__item"><a class="menu__link menu__link--active" href="./portfolio.html">Портфоліо</a></li>
+        <li class="menu__item"><a class="menu__link" href="#contact">Контакти</a></li>
+      </ul>
+    </nav>
+    <ul class="list menu__list menu__list--contact">
+      <li class="menu__item">
+        <a class="menu__link menu__link--contact" href="mailto:info@devstudio.com">
+                     info@devstudio.com</a
+        >
+      </li>
+      <li class="menu__item">
+        <a class="menu__link menu__link--contact menu__link--contact-tel" href="tel:+380961111111">
+                      +38 096 111 11 11
+        </a>
+      </li>
+    </ul>
+    <ul class="list menu--social">
+      <li class="menu__item--social">
+        <a
+          href="https://www.instagram.com"
+          class="menu__link--social"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </li>
+      <li class="menu__item--social">
+        <a
+          href="https://twitter.com"
+          class="menu__link--social"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+      </li>
+      <li class="menu__item--social">
+        <a
+          href="https://www.facebook.com"
+          class="menu__link--social"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Facebook
+        </a>
+      </li>
+      <li class="menu__item--social">
+        <a
+          href="https://ua.linkedin.com"
+          class="menu__link--social"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Linkedin
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- script -->
+  <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
