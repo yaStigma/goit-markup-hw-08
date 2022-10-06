@@ -30,8 +30,14 @@
     color: $color-text-accent;
   }
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    &__list {
+      align-items: flex-start;
+    }
+  }
+}
 
-// .address {
 //   margin-top: 20px;
 
 //   &__item {

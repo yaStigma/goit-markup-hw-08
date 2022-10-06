@@ -16,7 +16,8 @@
   cursor: pointer;
 
   &--hero {
-    padding: 10px 24px;
+    width: 200px;
+    padding: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -140,7 +141,8 @@
 @media screen and (min-width: 1200px) {
   .button {
     &--hero {
-      padding: 10px 32px;
+      padding: 10px;
+      width: 200px;
     }
   }
 }

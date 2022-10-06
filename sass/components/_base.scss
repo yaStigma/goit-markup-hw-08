@@ -33,8 +33,10 @@ img {
 }
 .grid {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+
   &__item--client {
     width: 210px;
     height: 92px;

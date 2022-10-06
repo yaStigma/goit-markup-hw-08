@@ -15,7 +15,9 @@
   }
 }
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -43,6 +45,7 @@
     border-left: 1px solid $background-color-box;
     border-right: 1px solid $background-color-box;
     border-bottom: 1px solid $background-color-box;
+    flex-grow: 1;
   }
   &__name {
     margin-bottom: 4px;

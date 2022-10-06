@@ -15,10 +15,10 @@
     padding-right: 60px;
   }
   &__title {
-    width: 360px;
+    max-width: 360px;
     margin-bottom: 30px;
-    margin-left: 0;
-    margin-right: 0;
+    // margin-left: 0;
+    // margin-right: 0;
 
     color: $color-text-hero;
     font-weight: 900;
@@ -48,6 +48,9 @@
       padding-left: 204px;
       padding-right: 204px;
     }
+    &__title {
+      // width: 360px;
+    }
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -72,9 +75,11 @@
     }
     &__title {
       width: 696px;
-
       font-size: 44px;
       line-height: calc(60 / 44);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
   }
 }
